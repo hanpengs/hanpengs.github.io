@@ -517,6 +517,8 @@
       
         
       
+        
+      
     
     
       
@@ -597,11 +599,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-WhalealOverview/03-QuickStart.md" class="md-nav__link">
+      <a href="../../01-WhalealOverview/03-QuickStartOnPremise/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    QuickStart
+    QuickStart On Premise
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-WhalealOverview/04-QuickStartOnMarketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QuickStart On Marketplace
   </span>
   
 
@@ -5508,21 +5531,20 @@
 <h2 id="configuration-examples">Configuration Examples</h2>
 <h3 id="prometheus-configuration">prometheus configuration</h3>
 <p>1.Modify the prometheus configuration file prometheus.yml</p>
-<pre><code>  - job_name: wap-monitor
+<div class="highlight"><pre><span></span><code>  - job_name: wap-monitor
     scrape_interval: 10s
-    metrics_path: '/api/server/mongo/getMongoDBForPrometheus'
+    metrics_path: &#39;/api/server/mongo/getMongoDBForPrometheus&#39;
     params:
       id: [&quot;public&quot;]
       type: [&quot;project&quot;]
     basic_auth:
-      username: 'admin'
+      username: &#39;admin&#39;
       password: xxxxx
     static_configs:
-      - targets: ['172.xx.xx.xx:8080']
+      - targets: [&#39;172.xx.xx.xx:8080&#39;]
         labels:
           instance: wap
-
-</code></pre>
+</code></pre></div>
 <p><strong>Request parameters:</strong></p>
 <table>
 <thead>
