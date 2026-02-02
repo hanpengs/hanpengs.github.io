@@ -1,5 +1,7 @@
 <!-- Elements added to "home.html" will only be displayed on the home page -->
 
+<!-- Elements added to "main.html" will be displayed on all pages -->
+
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -55,31 +57,8 @@
     
     
     
-
-<style>
-/* 背景颜色 */
-.md-banner {
-    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 50%, #6a11cb 100%) !important;
-}
-.md-banner__inner { background: transparent !important; box-shadow: none !important; }
-
-/* 公告文字颜色 */
-.custom-announcement {
-   color: #ffffff;
-}
-
-
-.custom-announcement a {
-    color: #ffd700 !important;  /* 黄色，或者你想要的颜色 */
-    text-decoration: none;  /* 保留下划线，也可以改成 none */
-}
-
-
-.custom-announcement a:hover {
-    color: #ffea00 !important;  /* 鼠标悬停变亮色 */
-}
-
-</style>
+    <!-- main.html | Added "navigation.instant" support -->
+    <link rel="canonical" href=".">
 
   </head>
   
@@ -101,18 +80,6 @@
       
     </div>
     <div data-md-component="announce">
-      
-        <aside class="md-banner">
-          <div class="md-banner__inner md-grid md-typeset">
-            
-            
-<div class="custom-announcement">
-  🚨 官网公告: 重要通知，请 <a href="https://www.whaleal.io/" target="_blank" >点击查看</a>
-</div>
-
-          </div>
-          
-        </aside>
       
     </div>
     
