@@ -13,21 +13,25 @@
       
       
       
+        <link rel="prev" href="../../project/projects-overview-aws/">
       
       
-      <link rel="icon" href="/images/logo.png">
+        <link rel="next" href="../Deploy_Sharded_Cluster/">
+      
+      
+      <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
     
     
       
-        <title>Whaleal docs</title>
+        <title>MongoDB Replica Set Creation - Whaleal docs</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.76a95c52.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.76a95c52.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mongodb-replica-set-creation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,9 +97,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Whaleal docs" class="md-header__button md-logo" aria-label="Whaleal docs" data-md-component="logo">
+    <a href="../../.." title="Whaleal docs" class="md-header__button md-logo" aria-label="Whaleal docs" data-md-component="logo">
       
-  <img src="/images/logo1.svg" alt="logo">
+  <img src="../../../images/logo1.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              MongoDB Replica Set Creation
             
           </span>
         </div>
@@ -221,7 +230,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -236,11 +245,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/whaleal-platform-4.0/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -275,9 +286,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Whaleal docs" class="md-nav__button md-logo" aria-label="Whaleal docs" data-md-component="logo">
+    <a href="../../.." title="Whaleal docs" class="md-nav__button md-logo" aria-label="Whaleal docs" data-md-component="logo">
       
-  <img src="/images/logo1.svg" alt="logo">
+  <img src="../../../images/logo1.svg" alt="logo">
 
     </a>
     Whaleal docs
@@ -304,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -321,6 +332,8 @@
       
   
   
+    
+  
   
   
     
@@ -349,19 +362,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/whaleal-platform-4.0/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -372,13 +388,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Whaleal Platform 4.0
@@ -440,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/whaleal-overview/whaleal-4.0-new-version-features/" class="md-nav__link">
+      <a href="../../whaleal-overview/whaleal-4.0-new-version-features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/whaleal-overview/whaleal-architecture/" class="md-nav__link">
+      <a href="../../whaleal-overview/whaleal-architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -482,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/whaleal-overview/whaleal-version-comparison/" class="md-nav__link">
+      <a href="../../whaleal-overview/whaleal-version-comparison/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/Install-wap/quick-start-on-aws-marketplace/" class="md-nav__link">
+      <a href="../../Install-wap/quick-start-on-aws-marketplace/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/project/projects-overview-aws/" class="md-nav__link">
+      <a href="../../project/projects-overview-aws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,8 +666,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -669,11 +687,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -687,7 +705,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Cluster Creation
@@ -698,10 +716,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/cluster-create/Deploy_ReplicaSet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MongoDB Replica Set Creation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -710,6 +746,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mongodb-replica-set-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      MongoDB Replica Set Creation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MongoDB Replica Set Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-parameter-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Parameter Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-automated-aws-internal-workflow-replica-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Automated AWS Internal Workflow (Replica Set)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -722,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/cluster-create/Deploy_Sharded_Cluster/" class="md-nav__link">
+      <a href="../Deploy_Sharded_Cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/cluster-create/Automatic_scaling/" class="md-nav__link">
+      <a href="../Automatic_scaling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/cluster-create/check_mongodb/" class="md-nav__link">
+      <a href="../check_mongodb/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -835,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/whaleal-full-feature-flow/whaleal-full-feature-flow/" class="md-nav__link">
+      <a href="../../whaleal-full-feature-flow/whaleal-full-feature-flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -906,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/backup/Backup_Restore/" class="md-nav__link">
+      <a href="../../backup/Backup_Restore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -985,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/settings/03-collection-granularity/" class="md-nav__link">
+      <a href="../../settings/03-collection-granularity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1006,7 +1093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/settings/04-kubernetes-settings/" class="md-nav__link">
+      <a href="../../settings/04-kubernetes-settings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1027,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/settings/05-s3-configuration/" class="md-nav__link">
+      <a href="../../settings/05-s3-configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1048,7 +1135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/settings/08-aws-credential/" class="md-nav__link">
+      <a href="../../settings/08-aws-credential/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,7 +1156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/settings/09-storage/" class="md-nav__link">
+      <a href="../../settings/09-storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1146,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/faq/faq_install/" class="md-nav__link">
+      <a href="../../faq/faq_install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/faq/faq_maintenance/" class="md-nav__link">
+      <a href="../../faq/faq_maintenance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1188,7 +1275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/faq/faq_backup/" class="md-nav__link">
+      <a href="../../faq/faq_backup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1209,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/whaleal-platform-4.0/faq/faq_performance/" class="md-nav__link">
+      <a href="../../faq/faq_performance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1256,6 +1343,47 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mongodb-replica-set-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      MongoDB Replica Set Creation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MongoDB Replica Set Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-parameter-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Parameter Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-automated-aws-internal-workflow-replica-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Automated AWS Internal Workflow (Replica Set)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1266,8 +1394,170 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  <h1>MongoDB Replica Set Creation</h1>
+
+<h2 id="mongodb-replica-set-creation">MongoDB Replica Set Creation</h2>
+<p>In the WAP console, click <strong>MongoDB → Create Cluster → Create MongoDB</strong> to enter the MongoDB cluster creation wizard.</p>
+<p><img alt="1770010605200" src="../images/MongoDB_Cluster_Create/1770010605200.png" /></p>
+<p><img alt="1770010754330" src="../images/MongoDB_Cluster_Create/1770010754330.png" /></p>
+<h3 id="1-parameter-description">1. Parameter Description</h3>
+<ul>
+<li>
+<p><strong>Project</strong><br />
+  Select an existing Project, which is used for resource, network, and permission isolation.</p>
+</li>
+<li>
+<p><strong>VPC</strong><br />
+  Select the VPC used by the MongoDB cluster based on the Project’s Region:</p>
+</li>
+<li><strong>Default-VPC</strong><br />
+    The VPC where the WAP Server is deployed (available only when MongoDB and WAP are deployed in the same Region).</li>
+<li>
+<p><strong>wap-vpc</strong><br />
+    If this VPC does not exist in the current Region, WAP will automatically create it.</p>
+</li>
+<li>
+<p><strong>Cluster Name</strong><br />
+  The name of the MongoDB replica set, used as the unique cluster-level identifier.</p>
+</li>
+<li>
+<p><strong>MongoDB Version</strong><br />
+  Select the MongoDB version to deploy.  </p>
+<blockquote>
+<p>Custom MongoDB installation packages can be uploaded via <strong>Upload MongoDB</strong>.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>MongoDB Node</strong><br />
+  The number of nodes in the replica set, corresponding to the number of EC2 instances to be created (commonly 3 or 5 nodes).</p>
+</li>
+<li>
+<p><strong>EC2 Type</strong><br />
+  The EC2 instance type used for MongoDB nodes, which determines CPU and memory resources.</p>
+</li>
+<li>
+<p><strong>Available Zone</strong><br />
+  AWS Availability Zone selection:</p>
+</li>
+<li>Single Availability Zone deployment</li>
+<li>
+<p>Multi-Availability Zone deployment (supports up to 3 AZs to improve high availability)</p>
+</li>
+<li>
+<p><strong>Storage</strong></p>
+</li>
+<li><strong>Size</strong><br />
+    Data disk size, default is 100 GB.</li>
+<li><strong>Volume Type</strong><br />
+    EBS volume type, default is gp3.</li>
+<li>
+<p><strong>IOPS</strong><br />
+    Baseline disk IOPS, default is 3000.</p>
+</li>
+<li>
+<p><strong>Auto Scaling</strong><br />
+  Enables automatic scaling. When resource usage reaches defined thresholds, WAP will automatically upgrade the instance type based on built-in policies.</p>
+</li>
+<li>
+<p><strong>Auth Level</strong><br />
+  MongoDB authentication method:</p>
+</li>
+<li>Username / Password</li>
+<li>
+<p>Certificate-based authentication</p>
+</li>
+<li>
+<p><strong>Username</strong><br />
+  MongoDB administrator username.</p>
+</li>
+<li>
+<p><strong>Password</strong><br />
+  MongoDB administrator password.</p>
+</li>
+<li>
+<p><strong>Authentication Database</strong><br />
+  MongoDB authentication database, default is <code>admin</code>.</p>
+</li>
+</ul>
+<hr />
+<h3 id="2-automated-aws-internal-workflow-replica-set">2. Automated AWS Internal Workflow (Replica Set)</h3>
+<p>After clicking <strong>Create</strong>, WAP automatically performs the following steps within AWS:</p>
+<ol>
+<li><strong>Resource Validation</strong></li>
+<li>Validate the Project, Region, VPC, and Availability Zones.</li>
+<li>
+<p>Verify the integrity and version compatibility of the MongoDB installation package.</p>
+</li>
+<li>
+<p><strong>Network and Security Configuration</strong></p>
+</li>
+<li>Create or reuse the target VPC and subnets.</li>
+<li>Automatically configure Security Groups to allow required MongoDB ports.</li>
+<li>
+<p>Configure internal network connectivity between nodes.</p>
+</li>
+<li>
+<p><strong>EC2 Instance Provisioning</strong></p>
+</li>
+<li>Create instances based on the selected EC2 type and AZ distribution.</li>
+<li>Attach gp3 data volumes and configure IOPS.</li>
+<li>
+<p>Automatically configure hostnames and private IP addresses.</p>
+</li>
+<li>
+<p><strong>Operating System Initialization</strong></p>
+</li>
+<li>Execute OS tuning scripts (ulimit, sysctl, THP, NUMA, etc.).</li>
+<li>
+<p>Install required dependencies for MongoDB runtime.</p>
+</li>
+<li>
+<p><strong>MongoDB Installation and Configuration</strong></p>
+</li>
+<li>Extract and install the specified MongoDB version.</li>
+<li>Automatically generate <code>mongod.conf</code>.</li>
+<li>
+<p>Configure data directories, log directories, and WiredTiger parameters.</p>
+</li>
+<li>
+<p><strong>Replica Set Initialization</strong></p>
+</li>
+<li>Start all <code>mongod</code> instances.</li>
+<li>Automatically execute <code>rs.initiate()</code>.</li>
+<li>
+<p>Complete Primary election based on node order.</p>
+</li>
+<li>
+<p><strong>Authentication and Security Initialization</strong></p>
+</li>
+<li>Create the MongoDB administrator user.</li>
+<li>Enable MongoDB authentication.</li>
+<li>
+<p>Store credentials in the WAP centralized credential management module.</p>
+</li>
+<li>
+<p><strong>Cluster Onboarding</strong></p>
+</li>
+<li>Register the cluster with the WAP platform.</li>
+<li>Enable monitoring, logging, and alerting.</li>
+<li>Update the cluster status to <strong>Running</strong>.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1285,6 +1575,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../project/projects-overview-aws/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Projects Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Projects Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Deploy_Sharded_Cluster/" class="md-footer__link md-footer__link--next" aria-label="Next: MongoDB Sharded Cluster Creation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                MongoDB Sharded Cluster Creation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1315,10 +1643,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy", "navigation.top", "navigation.version"], "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy", "navigation.top", "navigation.version"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
