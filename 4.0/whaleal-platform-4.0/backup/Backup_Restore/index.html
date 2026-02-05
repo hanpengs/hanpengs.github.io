@@ -206,7 +206,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    whaleal-wdocs
+    whaleal-docs
   </div>
 </a>
       </div>
@@ -301,7 +301,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    whaleal-wdocs
+    whaleal-docs
   </div>
 </a>
     </div>
@@ -903,7 +903,7 @@
             
   
   <span class="md-ellipsis">
-    backup
+    Backup
   </span>
   
 
@@ -913,7 +913,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_7">
             <span class="md-nav__icon md-icon"></span>
-            backup
+            Backup
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1238,7 +1238,7 @@
             
   
   <span class="md-ellipsis">
-    settings
+    Settings
   </span>
   
 
@@ -1248,7 +1248,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
-            settings
+            Settings
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1399,7 +1399,7 @@
             
   
   <span class="md-ellipsis">
-    faq
+    Frequently Asked Questions
   </span>
   
 
@@ -1409,7 +1409,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
-            faq
+            Frequently Asked Questions
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1776,37 +1776,45 @@
 <h3 id="1-architecture-components">1. Architecture Components</h3>
 <p>The MongoDB backup and restore system in WAP consists of the following components:</p>
 <ul>
-<li><strong>MongoDB Cluster</strong></li>
-<li>Replica set or sharded cluster</li>
 <li>
-<p>Provides full data and oplog sources</p>
+<p><strong>MongoDB Cluster</strong></p>
+<ul>
+<li>Replica set or sharded cluster</li>
+<li>Provides full data and oplog sources</li>
+</ul>
 </li>
 <li>
 <p><strong>WAP Server</strong></p>
-</li>
-<li>
-<p>Responsible for backup policy distribution, task scheduling, and status management</p>
+<ul>
+<li>Responsible for backup policy distribution, task scheduling, and status management</li>
+</ul>
 </li>
 <li>
 <p><strong>DDT Server (Backup &amp; Restore Execution Node)</strong></p>
-</li>
+<ul>
 <li>Dedicated EC2 instance</li>
-<li>
-<p>Executes actual MongoDB backup and restore operations</p>
+<li>Executes actual MongoDB backup and restore operations</li>
+</ul>
 </li>
 <li>
 <p><strong>Backup Storage</strong></p>
-</li>
+<ul>
 <li>Local disk or object storage (depending on deployment strategy)</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="2-network-and-data-flow">2. Network and Data Flow</h3>
 <ul>
 <li>MongoDB nodes communicate with the DDT Server over the <strong>internal network</strong></li>
 <li>All backup and restore data traffic <strong>does not pass through the WAP Server</strong></li>
-<li>The WAP Server acts only as:</li>
+<li>
+<p>The WAP Server acts only as:</p>
+<ul>
 <li>Control Plane</li>
 <li>Scheduler, auditor, and visualization layer</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h2 id="ii-backup-workflow">II. Backup Workflow</h2>
@@ -1816,58 +1824,62 @@
 <p><img alt="1770085091168" src="../images/Backup_Restore/1770085091168.png" /></p>
 <p>When creating a backup repository in WAP, the following parameters can be configured:</p>
 <ul>
-<li><strong>Repository Name</strong></li>
 <li>
-<p>Name of the backup repository</p>
+<p><strong>Repository Name</strong></p>
+<ul>
+<li>Name of the backup repository</li>
+</ul>
 </li>
 <li>
 <p><strong>MongoDB Cluster</strong></p>
-</li>
-<li>
-<p>Select the MongoDB cluster to be backed up</p>
-</li>
-<li>
-<p><strong>Take Snapshots Every</strong></p>
-</li>
-<li>
-<p>Backup frequency (daily)</p>
+<ul>
+<li>Select the MongoDB cluster to be backed up</li>
+</ul>
 </li>
 <li>
 <p><strong>Take Snapshots Every</strong></p>
+<ul>
+<li>Backup frequency (daily)</li>
+</ul>
 </li>
 <li>
-<p>Scheduled execution time</p>
+<p><strong>Take Snapshots Every</strong></p>
+<ul>
+<li>Scheduled execution time</li>
+</ul>
 </li>
 <li>
 <p><strong>Init Time</strong></p>
-</li>
-<li>
-<p>Snapshot start time, using UTC time</p>
+<ul>
+<li>Snapshot start time, using UTC time</li>
+</ul>
 </li>
 <li>
 <p><strong>Namespace Whitelist</strong></p>
-</li>
+<ul>
 <li>Supports specifying databases and collections</li>
-<li>
-<p>Backup scope is controlled via a whitelist</p>
+<li>Backup scope is controlled via a whitelist</li>
+</ul>
 </li>
 <li>
 <p><strong>Recover Data From Days</strong></p>
-</li>
+<ul>
 <li>Retention period (in days)</li>
-<li>
-<p>Expired backups are automatically cleaned up</p>
+<li>Expired backups are automatically cleaned up</li>
+</ul>
 </li>
 <li>
 <p><strong>Send Message</strong></p>
-</li>
-<li>
-<p>Backup notifications are enabled by default</p>
+<ul>
+<li>Backup notifications are enabled by default</li>
+</ul>
 </li>
 <li>
 <p><strong>Advanced</strong></p>
-</li>
+<ul>
 <li>Memory limit for the backup service process (default value)</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="2-backup-types">2. Backup Types</h3>
@@ -1889,10 +1901,16 @@
 <ol>
 <li>WAP Server triggers a backup task based on the defined policy</li>
 <li>The task is dispatched to the corresponding DDT Server</li>
-<li>The DDT Server:</li>
+<li>
+<p>The DDT Server:</p>
+<ul>
 <li>Pulls data from MongoDB Secondary nodes</li>
 <li>Executes full or oplog backups</li>
-<li>Backup data is written to the target storage</li>
+</ul>
+</li>
+<li>
+<p>Backup data is written to the target storage</p>
+</li>
 <li>Task status and results are reported back to the WAP Server</li>
 <li>The platform updates backup status and generates audit records</li>
 </ol>
@@ -1916,35 +1934,51 @@
 <h3 id="2-restore-execution-workflow">2. Restore Execution Workflow</h3>
 <ol>
 <li>The user initiates a restore task in the WAP console</li>
-<li>Select:</li>
+<li>
+<p>Select:</p>
+<ul>
 <li>Target backup set</li>
 <li>Restore point in time</li>
 <li>Target MongoDB cluster (original or new cluster)</li>
-<li>WAP Server dispatches the restore task to the DDT Server</li>
-<li>The DDT Server performs:</li>
+</ul>
+</li>
+<li>
+<p>WAP Server dispatches the restore task to the DDT Server</p>
+</li>
+<li>
+<p>The DDT Server performs:</p>
+<ol>
 <li>Full data restore</li>
 <li>Oplog replay in chronological order</li>
-<li>Consistency checks are performed after restoration</li>
+</ol>
+</li>
+<li>
+<p>Consistency checks are performed after restoration</p>
+</li>
 <li>Restore status is reported back to the WAP platform</li>
 </ol>
 <p><img alt="1770088866005" src="../images/Backup_Restore/1770088866005.png" /></p>
 <p><strong>Parameter Description:</strong></p>
 <ul>
-<li><strong>Backup Strategy</strong></li>
 <li>
-<p>Name of the backup task</p>
+<p><strong>Backup Strategy</strong></p>
+<ul>
+<li>Name of the backup task</li>
+</ul>
 </li>
 <li>
 <p><strong>Restore To</strong></p>
-</li>
-<li>
-<p>Target cluster for restoration (original cluster or a new cluster)</p>
+<ul>
+<li>Target cluster for restoration (original cluster or a new cluster)</li>
+</ul>
 </li>
 <li>
 <p><strong>Restore Type</strong></p>
-</li>
+<ul>
 <li><strong>Point in Time</strong>: Restore to any specified point in time</li>
 <li><strong>Snapshot</strong>: Restore using a selected snapshot</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h2 id="iv-ddt-server-resource-planning-and-concurrency-model">IV. DDT Server Resource Planning and Concurrency Model</h2>
@@ -1960,52 +1994,76 @@
 <h4 id="ec2-1-dedicated-backup-execution-node">EC2-1 (Dedicated Backup Execution Node)</h4>
 <ul>
 <li><strong>Specification</strong>: 8 vCPU / 16 GB RAM</li>
-<li><strong>Responsibilities</strong>:</li>
+<li>
+<p><strong>Responsibilities</strong>:</p>
+<ul>
 <li>MongoDB oplog backup</li>
 <li>MongoDB full backup</li>
 <li>Java-based oplog processing</li>
-<li><strong>Resource Consumption Model</strong>:</li>
+</ul>
+</li>
+<li>
+<p><strong>Resource Consumption Model</strong>:</p>
+<ul>
 <li>Oplog backup: ~2 GB</li>
 <li>Full backup: ~2 GB</li>
 <li>Java processing: ~2 GB</li>
-<li><strong>Total</strong>: ~14 GB</li>
+</ul>
+</li>
+<li>
+<p><strong>Total</strong>: ~14 GB</p>
+</li>
 </ul>
 <hr />
 <h4 id="ec2-2-dedicated-restore-node">EC2-2 (Dedicated Restore Node)</h4>
 <ul>
 <li><strong>Specification</strong>: 4 vCPU / 10.5 GB RAM (or higher)</li>
-<li><strong>Responsibilities</strong>:</li>
+<li>
+<p><strong>Responsibilities</strong>:</p>
+<ul>
 <li>Full restore</li>
 <li>Oplog replay</li>
-<li><strong>Memory usage per task</strong>:</li>
+</ul>
+</li>
+<li>
+<p><strong>Memory usage per task</strong>:</p>
+<ul>
 <li>~8 GB</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h3 id="3-concurrency-and-throttling-strategy">3. Concurrency and Throttling Strategy</h3>
 <ul>
-<li>At any given time:</li>
-<li>A single DDT Server executes <strong>only one restore task</strong></li>
 <li>
-<p>Prevents IO and CPU contention</p>
+<p>At any given time:</p>
+<ul>
+<li>A single DDT Server executes <strong>only one restore task</strong></li>
+<li>Prevents IO and CPU contention</li>
+</ul>
 </li>
 <li>
 <p>When CPU utilization exceeds <strong>80%</strong>:</p>
-</li>
-<li>
-<p>New task scheduling is automatically paused</p>
+<ul>
+<li>New task scheduling is automatically paused</li>
+</ul>
 </li>
 <li>
 <p>This ensures:</p>
-</li>
+<ul>
 <li>Each restore task completes within a controlled timeframe</li>
 <li>Backup task stability is not impacted</li>
+</ul>
+</li>
 </ul>
 <hr />
 <h2 id="v-sharded-cluster-backup-considerations">V. Sharded Cluster Backup Considerations</h2>
 <ul>
-<li><strong>Each sharded cluster</strong></li>
 <li>
-<p>Requires at least <strong>one dedicated DDT Server</strong></p>
+<p><strong>Each sharded cluster</strong></p>
+<ul>
+<li>Requires at least <strong>one dedicated DDT Server</strong></li>
+</ul>
 </li>
 <li>
 <p>Recommended EC2 specifications based on shard count:</p>
